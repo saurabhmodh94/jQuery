@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- external script -->
 	<script type="text/javascript">
 		$(window).on('load',function(){
 			alert("Window Load");
@@ -13,7 +13,8 @@
 			// alert(x);
 		});
 		// alert(1);
-	</script>
+	</script> <!-- internal script -->
+	<script src="script.js"></script>  <!-- internal script -->
 </head>
 <body>
 	<!-- <script type="text/javascript">
@@ -27,6 +28,7 @@
 		$('body').html('Hello World!');
 	</script> -->
 	<!-- <div>Saurabh Modh</div> -->
-	<img src="http://wallpapers-fenix.eu/full/151007/045612254.jpg"></img>
+	<img src="http://wallpapers-fenix.eu/full/151007/045612254.jpg" onload="print_console()"></img> <!-- inline script -->
+	<!-- scripts executes from top to bottom -->
 </body>
 </html>

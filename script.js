@@ -1,8 +1,18 @@
+function paraClick(){
+	alert("Para Clicked.")
+}
+function addDiv(){
+	$('button').after('<p class="pClass">Para</p>');
+}
 $(document).ready(function(){
-	var text = $('#test').text();
-	var html = $('#test').html();
-	$('#test').after(text);
-	// $('#test').after(html);
+	$('button').click(addDiv);
+	// $('.pClass').click(paraClick); //will not work
+	$(document).on('click','.pClass',paraClick); //$(PARENT).on(EVENT,SELECTOR,FUNCTION)
+
+	// var text = $('#test').text();
+	// var html = $('#test').html();
+	// $('#test').after(text);
+	// // $('#test').after(html);
 	/*Other EventHandlers:
 		// change
 		// after

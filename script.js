@@ -1,3 +1,8 @@
+function changeColor(){
+	$(this).css('background-color', 'orange');
+	// $(this) === this : false
+	// $(this)[0] === this : true
+}
 /*function paraClick(){
 	alert("Para Clicked.")
 }
@@ -5,8 +10,9 @@ function addDiv(){
 	$('button').after('<p class="pClass">Para</p>');
 }*/
 $(document).ready(function(){
-	console.log($('div').css('background-color'));
-	$('div').css('background-color', 'yellow');
+	$('li').click(changeColor);
+	// console.log($('div').css('background-color'));
+	// $('div').css('background-color', 'yellow');
 	// $('button').click(addDiv);
 	// // $('.pClass').click(paraClick); //will not work
 	// $(document).on('click','.pClass',paraClick); //$(PARENT).on(EVENT,SELECTOR,FUNCTION)

@@ -4,11 +4,15 @@
 	<title></title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function(){
-			var x = $('div').html();
-			alert(x);
+		$(window).on('load',function(){
+			alert("Window Load");
 		});
-		alert(1);
+		$(document).ready(function(){
+			alert("Document Load");
+			// var x = $('div').html();
+			// alert(x);
+		});
+		// alert(1);
 	</script>
 </head>
 <body>
@@ -22,6 +26,7 @@
 		//$(SELECTOR).method()
 		$('body').html('Hello World!');
 	</script> -->
-	<div>Saurabh Modh</div>
+	<!-- <div>Saurabh Modh</div> -->
+	<img src="http://wallpapers-fenix.eu/full/151007/045612254.jpg"></img>
 </body>
 </html>

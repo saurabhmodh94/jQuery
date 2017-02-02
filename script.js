@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	var text = $('#test').text();
+	var html = $('#test').html();
+	$('#test').after(text);
+	// $('#test').after(html);
 	/*Other EventHandlers:
 		// change
 		// after

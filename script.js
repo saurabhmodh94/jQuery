@@ -1,13 +1,15 @@
-function paraClick(){
+/*function paraClick(){
 	alert("Para Clicked.")
 }
 function addDiv(){
 	$('button').after('<p class="pClass">Para</p>');
-}
+}*/
 $(document).ready(function(){
-	$('button').click(addDiv);
-	// $('.pClass').click(paraClick); //will not work
-	$(document).on('click','.pClass',paraClick); //$(PARENT).on(EVENT,SELECTOR,FUNCTION)
+	console.log($('div').css('background-color'));
+	$('div').css('background-color', 'yellow');
+	// $('button').click(addDiv);
+	// // $('.pClass').click(paraClick); //will not work
+	// $(document).on('click','.pClass',paraClick); //$(PARENT).on(EVENT,SELECTOR,FUNCTION)
 
 	// var text = $('#test').text();
 	// var html = $('#test').html();

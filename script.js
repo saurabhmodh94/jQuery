@@ -14,6 +14,8 @@ $(document).ready(function(){
 		// css
 		// eq(0).css
 		// eq(0).siblings*/
+		// mouseenter
+		// mouseout
 	// $('div.a').html('123');
 	// $('span.a').html('456');
 	//selectors: ('tag')('#id')('.class')('tag#id')('tag.class')
